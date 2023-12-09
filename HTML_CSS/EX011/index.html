@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir essa imagem em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(min-width: 1250px)" srcset="img/foto-1200.png" type="image/png">
+        <source media="(min-width: 1050px)" srcset="img/foto-1000.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="img/foto-700.png" type="image/png">
+        <source media="(min-width: 550px)" srcset="img/foto-500.png" type="image/png">
+        <img src="img/foto-300.png" alt="">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" loop controls>
+        <source src="media/videoplayback.weba" type="audio/weba">
+        <source src="media/Isaac Elton - Bottom of the Sea (Official Music Video) (1).mp4" type="audio/mp4">
+        <source src="media/SK LD R n.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não suporta o áudio.<a href="media/SK LD R n.mp3">Clique aqui para baixar a música.</a></p><!---->
+    </audio>
+</body>
+</html>
