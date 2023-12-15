@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* CSS WEB SAFE FONT COMBINATIONS*/
+body{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+    /*
+    MEDIDAS ABSOLUTAS
+    cm, mm, in, px, pt, pc
+
+    MEDIDAS RELATIVAS
+    em, ex, rem, vw, vh, %
+    */
+    font-size: 16px;
+
+    /*
+    weight peso widht largura height altura
+    lighter normal bold bolder
+    */
+    font-weight: bolder;
+}
