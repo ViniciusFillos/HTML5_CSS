@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a:active{
+    color: yellow;
+    background-color: purple;
+}
+
+a::before{
+    content: '→';
+    color: blue;
+}
+
+a::after{
+    content: '←' ;
+    color: rgb(247, 96, 121);
+}
+
+.especial{
+    background-color: yellow;
+}
+
+.especial:hover{
+    background-color: purple;
+}
+.especial:active{
+    background-color: green;
+}
