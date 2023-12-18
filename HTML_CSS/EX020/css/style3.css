@@ -36,6 +36,7 @@ a::after{
 
 .especial{
     background-color: yellow;
+    color: white;
 }
 
 .especial:hover{
