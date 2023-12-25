@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            height: 200vh;
+            gap: 5vh;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        thead, tfoot {
+            color: white;
+            background-color: gray;
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+     -->
+     <h1>Uso de Tabelas Grandes</h1>
+     <table>
+        <thead>
+            <tr>
+                <th>Estado
+                <th>População
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo
+                <td class="num">44 411 238
+            </tr>
+            <tr>
+                <td>Minas Gerais
+                <td class="num">20 538 718
+            </tr>
+            <tr>
+                <td>Rio de Janeiro
+                <td class="num">16 054 524
+            </tr>
+            <tr>
+                <td>Bahia
+                <td class="num">14 141 626
+            </tr>
+            <tr>
+                <td>Paraná
+                <td class="num">11 444 380
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul
+                <td class="num">10 882 965
+            </tr>
+            <tr>
+                <td>Pernanbuco
+                <td class="num">9 058 931
+            </tr>
+            <tr>
+                <td>Ceará
+                <td class="num">8 794 957
+            </tr>
+            <tr>
+                <td>Pará
+                <td class="num">8 121 025
+            </tr> 
+            <tr>
+                <td>Bahia
+                <td class="num">14 141 626
+            </tr>
+            <tr>
+                <td>Santa Catarina
+                <td class="num">7 610 361
+            </tr>
+            <tr>
+                <td>Goiás
+                <td class="num">7 056 495
+            </tr>
+            <tr>
+                <td>Maranhão
+                <td class="num">6 775 805
+            </tr>
+            <tr>
+                <td>Paraiba
+                <td class="num">3 974 687
+            </tr>
+            <tr>
+                <td>Amazonas
+                <td class="num">3 941 613
+            </tr>
+            <tr>
+                <td>Espírito Santo
+                <td class="num">3 833 712
+            </tr>
+            <tr>
+                <td>Mato Grosso
+                <td class="num">3 658 649
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte
+                <td class="num">3 302 729
+            </tr>
+            <tr>
+                <td>Piauí
+                <td class="num">3 272 199
+            </tr>
+            <tr>
+                <td>Alagoas
+                <td class="num">3 127 683
+            </tr>
+            <tr>
+                <td>Distrito Federal
+                <td class="num">2 817 381
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul
+                <td class="num">2 757 013
+            </tr>
+            <tr>
+                <td>Sergipe
+                <td class="num">2 209 558
+            </tr>
+            <tr>
+                <td>Rondônia
+                <td class="num">1 581 196
+            </tr>
+            <tr>
+                <td>Tocantis
+                <td class="num">1 511 460
+                </th>
+            </tr>
+            <tr>
+                <td>Acre
+                <td class="num">830 018
+            </tr>
+            <tr>
+                <td>Amapá
+                <td class="num">733 759
+            </tr>
+            <tr>
+                <td>Roraima
+                <td class="num">636 707
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes
+                <td class="num">203 062 512
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
