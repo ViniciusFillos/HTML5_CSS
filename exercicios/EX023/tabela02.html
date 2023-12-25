@@ -23,6 +23,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption {
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.347);
+            border: 1px solid black;
+        }
         td, th {
             border: 1px solid black;
             text-align: center;
@@ -41,6 +47,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -50,10 +57,11 @@
      -->
      <h1>Uso de Tabelas Grandes</h1>
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado
-                <th>População
+                <th scope="col">Estado
+                <th scope="col" style="width: 130px;">População
             </tr>
         </thead>
         <tbody>
@@ -93,10 +101,6 @@
                 <td>Pará
                 <td class="num">8 121 025
             </tr> 
-            <tr>
-                <td>Bahia
-                <td class="num">14 141 626
-            </tr>
             <tr>
                 <td>Santa Catarina
                 <td class="num">7 610 361
@@ -173,7 +177,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes
+                <th scope="row">Total de habitantes
                 <td class="num">203 062 512
             </tr>
         </tfoot>
