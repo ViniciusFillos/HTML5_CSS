@@ -15,9 +15,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;  
-            height: 200vh;
-            gap: 5vh;
+            justify-content: space-around;  
+            gap: 10vh;
+        }
+        h1 {
+            padding-top: 80px;
         }
         table {
             width: 500px;
@@ -26,8 +28,17 @@
         caption {
             text-transform: uppercase;
             padding: 10px;
-            background-color: rgba(128, 128, 128, 0.347);
+            background-color: lightgray;
             border: 1px solid black;
+        }
+        thead th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+        /* tr:nth-child() / odd = ímpar, even = par */
+        tbody > tr:nth-child(2n-1) {
+            background-color: lightgray;
         }
         td, th {
             border: 1px solid black;
@@ -182,5 +193,6 @@
             </tr>
         </tfoot>
      </table>
+     <p style="width: 500px; text-align: justify; font-size: 2em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur inventore perferendis officiis maiores nulla ad reiciendis omnis nam aliquam neque dolorem, molestiae natus. Doloremque ratione asperiores veniam doloribus. Repellendus, beatae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam odio cumque molestiae laborum temporibus ipsum recusandae, molestias officia corporis amet debitis aliquid, sapiente ea ducimus id iusto maiores ipsam totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas nostrum doloremque hic id quam officiis impedit fugit illum nobis corrupti perspiciatis, possimus ex rerum numquam esse, ipsa asperiores nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis aspernatur placeat ut fugiat nostrum quae possimus reprehenderit cum voluptatibus alias, voluptas adipisci voluptatem, odit eveniet perspiciatis deserunt veritatis error.</p>
 </body>
 </html>
