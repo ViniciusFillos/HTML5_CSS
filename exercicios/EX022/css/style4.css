@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(https://avatars.githubusercontent.com/u/107576816?v=4);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    border: 1px solid black;
+    height: 97vh;
+}

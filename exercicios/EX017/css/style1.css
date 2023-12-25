@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* CSS WEB SAFE FONT COMBINATIONS*/
+body{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+    /*
+    MEDIDAS ABSOLUTAS
+    cm, mm, in, px, pt, pc
+
+    MEDIDAS RELATIVAS
+    em, ex, rem, vw, vh, %
+    */
+    font-size: 16px;
+
+    /*
+    weight peso widht largura height altura
+    lighter normal bold bolder
+   
+    font-weight: bolder;
+    text-decoration: underline;
+    font-style: bolder;
+    font-style: italic;
+    */
+}
+h1{
+    /*
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic;
+
+    SHORTHAND FONT 
+    -> font-style -> font-weight -> font-size -> font-family;
+    */
+    font:italic bolder 3em 'Lucida Sans';
+}

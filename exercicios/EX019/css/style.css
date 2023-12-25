@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'RKS';
+    src: url(../font/RubikScribble-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'RKT';
+    src: url(../font/RubikDoodleTriangles-Regular.ttf) format('truetype');
+}
+
+body{
+    background-color: #B474EB;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0B132B;
+}
+
+#main{
+    text-align: center;
+    color: #9861C7;
+    background-color: aliceblue;
+}
+
+h1{
+    color: #3A254D;
+    background-color: #9861C7;
+}
+
+h2{
+    color: #593975;
+}
+
+.basico{
+    color: rgba(255, 255, 0, 0.507);
+}
+
+.intermediario{
+    color: rgba(255, 255, 0, 0.76);
+}
+
+.avancado{
+    color: rgb(255, 255, 0);
+}
+
+.html{
+    font-family: 'RKS';
+}
