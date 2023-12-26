@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    .classe {
+        font-weight: bold;
+    }
+    caption {
+        padding-bottom: 20px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+    td, th {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" class="classe" rowspan="3">Mulheres</td>
+                <td>Ana Maria dos Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Matrix</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Inseption</td>
+                <td>Hulk</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Vingadores</td>
+                <td>Toy Story</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" class="classe" rowspan="3">Homens</td>
+                <td>Vinicius Ruan Fillos</td>
+                <td>Interstellar</td>
+                <td>Vingadores</td>
+                <td>Aquaman</td>
+            </tr>
+            <tr>
+                <td>Jõao Carlos Alberto</td>
+                <td>Inseption</td>
+                <td>Carros 2</td>
+                <td>Shrek 2</td>
+            </tr>
+            <tr>
+                <td>Lucas Miguel</td>
+                <td>Barbie</td>
+                <td>Velozes e Furiosos</td>
+                <td>Wall-E</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>18</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

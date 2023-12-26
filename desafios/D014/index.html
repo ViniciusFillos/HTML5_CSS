@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Tabelas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+            gap: 80px;
+            margin: 50px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            text-transform: uppercase;
+            margin: 20px;
+        }
+        td , th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .gray {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Report Card</caption>
+        <thead class="gray">
+            <tr>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Subjects</th>
+                <th colspan="2" scope="colgroup">Grades</th>
+                <th rowspan="2" scope="col">Average</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">STEM</th>
+                <th scope="row">Math
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row">Physics
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row">Chemistry
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row">Biology
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="gray">
+                <th colspan="4" scope="row">STEM average</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanities</th>
+                <th scope="rowgroup">History
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Geography
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            
+            <tr class="gray">
+                <th colspan="4" scope="row">Humanities average</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>

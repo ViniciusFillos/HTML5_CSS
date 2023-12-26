@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        caption {
+            font-size: 1.5em;
+            text-transform: uppercase;
+            padding: 30px;
+        }
+        table{
+            border-collapse: collapse;
+        }  
+        td, th {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .destaque {
+            background-color: aquamarine;
+        }
+        .nome {
+            background-color: greenyellow;
+        }
+        .idade {
+            background-color: blueviolet;
+        }
+    </style>
+    <title>Exercicio de Tabela</title>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="nome">
+            <col class="idade" span="2">
+            <col class="profissao">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr class="destaque">
+            <td>Vinicius</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Estudante</td>
+        </tr>
+        <tr class="destaque">
+            <td>Pietra</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Atendente</td>
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>F</td>
+            <td>43</td>
+            <td>Supervisor</td>
+        </tr>
+        <tr>
+            <td>Marcela</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Lívia</td>
+            <td>F</td>
+            <td>31</td>
+            <td>Veterinária</td>
+        </tr>
+    </table>
+</body>
+</html>
