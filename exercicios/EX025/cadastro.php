@@ -1,0 +1,3 @@
+cadastro.php aq
+recebendo o formulario
+aprender php dps...
