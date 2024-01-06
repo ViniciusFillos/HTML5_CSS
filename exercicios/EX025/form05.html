@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 50px;
+            padding: 30px;
+            border: 5px solid black;
+            width: max-content;
+            margin: auto;
+            height: 60vh;
+        }
+        h1 {
+            margin-top: -30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        fieldset {
+            padding: 10px;
+            border: 2px solid black;
+        }
+        legend {
+            text-transform: uppercase;
+            padding: 0px 5px 0px 5px;
+        }
+        input {
+            cursor: pointer;
+        }
+        input:active {
+            background-color: gray;
+            color: white;
+
+        }
+        label {
+            margin: 0px 15px 0px 0px;
+            cursor: pointer;
+        }
+        input[type='submit'], input[type='reset'] {
+            font-size: 1rem;
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exemple Form</h1>
+        <form action="cadastro.php">
+            <fieldset>
+                <legend>Sex</legend>
+                <input type="radio" name="sexo" id="idmas"> <label for="idmas">Male</label>
+                <input type="radio" name="sexo" id="idfem"> <label for="idfem">Female</label>
+                <input type="radio" name="sexo" id="idhel" checked> <label for="idhel">Helicopter</label>
+            </fieldset>
+            <fieldset>
+                <legend>Favorites Sports</legend>
+                <input type="checkbox" name="fut" id="idfut">
+                <label for="idfut">Soccer</label>
+                <input checked type="checkbox" name="vol" id="idvol"><label for="idvol">Volleyball</label>
+                <input type="checkbox" name="bask" id="idbask"><label for="idbask">Basketball</label>
+                <input type="checkbox" name="swim" id="idswim"><label for="idswim">Swimming</label>
+            </fieldset>
+            <p>
+                <input type="submit" name="" id="" value="Submit">
+                <input type="reset" name="" id="" value="Reset">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
