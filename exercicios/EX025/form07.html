@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Example Form</h1>
+    <form action="cadastro.php" method="get">
+        
+        <p>
+            <label for="idsta">State</label>
+            <select name="state" id="idsta">
+                <option value="" selected>--- Select ---</option>
+                <optgroup label="Região Sul">
+                    <option value="SP">São Paulo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grade do Sul</option>
+                </optgroup>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="BH">Bahia</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="BH">Bahia</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="idJob">Job</label>
+            <input type="text" id="IdJob" name="Job" list="lstjob">
+            <datalist id="lstjob">
+                <option>Manager</option>
+                <option>Developer</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
