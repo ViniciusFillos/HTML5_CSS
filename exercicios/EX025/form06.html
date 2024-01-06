@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Color, Range and File</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idColor">Color</label>
+            <input type="color" value="#1111dd" name="color" id="idColor" style="margin: 0px; padding: 0px; height: 30px; width: 30px; border: none; vertical-align: sub;">
+        </p>
+
+        <p>
+            <label for="idLvl">Satisfaction Level</label>
+            <input type="range" name="sat" id="idLvl" min="0" max="4" value="0">
+        </p>
+
+        <p>
+            <label for="idPhoto">Profile Picture</label>
+            <input type="file" id="idPhoto" name="photo">
+        </p>
+
+        <p>
+            <input type="submit" name="submit" id="idSubmit" value="Submit">
+            <input type="reset" name="reset" id="idReset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
