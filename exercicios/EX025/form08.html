@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Outputs</h1>
+
+    <form action="cadastro.php">
+        <p>
+            <label for="idN1">Number 1</label>
+            <input type="number" name="" id="idN1" min="0" max="50" required oninput="idSum.innerHTML = Number(idN1.value) + Number(idN2.value)">
+        </p>
+        <p>
+            <label for="idN2">Number 1</label>
+            <input type="number" name="" id="idN2" min="0" max="50" required oninput="idSum.innerHTML = Number(idN1.value) + Number(idN2.value)">
+        </p>
+        <p>
+            <label for="idSum">Soma:</label>
+            <output id="idSum">0</output>
+        </p>
+        <p>
+            <input type="submit" name="" id="" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

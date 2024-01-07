@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Outputs</h1>
+
+    <form action="cadastro.php">
+        <h1>Outputs</h1>
+        <p>
+            <label for="year">When were you born?</label>
+            <input type="number" placeholder="Digite aqui" name="" id="year" min="1500" max="2024" oninput=calc() style="width: 80px;">
+        </p>
+        <p>
+            <label for="outp">Age that you'll get: </label>
+            <output id="outp">---</output>
+        </p>
+        <p>
+            <input type="submit" name="" id="" value="submit">
+            <input type="reset" name="" id="" value="reset">
+        </p>
+        <script>
+            function calc() {
+                var out = document.querySelector('output')
+                var DateToday = new Date()
+                var yeara = DateToday.getFullYear()
+
+                outp.innerHTML = Number(yeara) - Number(year.value)
+            }
+        </script>
+    </form>
+</body>
+</html> 
