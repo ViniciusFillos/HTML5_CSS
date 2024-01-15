@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+Phone: max 480px. ---> MOBILE FIRST DEFAUT
+Tablet: 481px — 768px.
+Laptops: 769px — 1024px.
+Desktop: 1025px — 1200px.
+Big Screens: 1201px, and more.
+*/
+
+@media screen and (min-width: 768px) {
+
+    span#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
