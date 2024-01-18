@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #ededed;
+    --color2: #a2d0ef;
+    --color3: #c7c6f3;
+    --color4: #ffc303;
+    --color5: #fd9492;
+}
+
