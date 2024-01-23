@@ -35,11 +35,11 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 div {
@@ -83,6 +83,7 @@ button, input[type="submit"] {
 }
 
 button {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,4 +133,9 @@ div.area, div.pass, div.area > input, div.pass > input {
 
 div.area:hover, div.pass:hover, div.area > input:hover, div.pass > input:hover {
     background-color: var(--color2);
+}
+
+div.area span, div.pass span{
+    font-size: 2em;
+    padding-top: 5px;
 }
